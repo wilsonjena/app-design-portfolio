@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --color-canvas: #F8F5F0;
+  --color-sand: #EDE4D8;
+  --color-umber: #2B1F17;
+  --color-amber-primary: #B45E28;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    color: #2B1F17;
+    background-color: #F8F5F0;
+  }
+
+  ::selection {
+    background-color: rgba(180, 94, 40, 0.2);
+    color: #924619;
+  }
+}
+
+/* Tactile Frosted Glass & Atmospheric Lighting */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.62);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  box-shadow: 0 20px 48px -12px rgba(54, 38, 25, 0.08), 0 1px 2px 0 rgba(255, 255, 255, 0.8) inset;
+}
+
+.glass-panel-subtle {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+}
+
+.glass-card-amber {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(246, 238, 228, 0.6) 100%);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 24px 60px -16px rgba(180, 94, 40, 0.12), 0 1px 0 rgba(255, 255, 255, 0.9) inset;
+}
+
+.glass-pill {
+  background: rgba(235, 226, 215, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.font-editorial {
+  font-family: var(--font-serif);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Warm Ambient Glow */
+.ambient-glow-amber {
+  background: radial-gradient(circle at 50% 50%, rgba(224, 133, 68, 0.28) 0%, rgba(224, 133, 68, 0) 70%);
+}
+
+.ambient-glow-sand {
+  background: radial-gradient(circle at 50% 50%, rgba(237, 228, 216, 0.6) 0%, rgba(248, 245, 240, 0) 70%);
+}

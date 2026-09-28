@@ -1,0 +1,6 @@
+{
+  "name": "Aura Studio — Spatial Design & 3D Environment OS",
+  "description": "The collaborative spatial design operating system for interior architects, luxury retail concept studios, and 3D environment teams. Shape spaces that feel alive.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
